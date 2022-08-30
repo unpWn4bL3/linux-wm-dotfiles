@@ -1,0 +1,11 @@
+#!/bin/bash
+fcitx5 -d
+kdeconnect-indicator &
+feh --bg-fill Pictures/wallpaper/w.png
+picom -b
+/usr/lib/polkit-kde-authentication-agent-1 &
+xset +fp /home/liudaye/.local/share/fonts/
+xset fp rehash
+autorandr clone-largest
+xrandr --output HDMI-1 --mode 1920x1080 -r 144
+cfw
